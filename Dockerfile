@@ -33,7 +33,7 @@ COPY default /etc/nginx/sites-available/
 RUN apt-get clean 
 
 #脚本加运行权限
-RUN chmod +x ./crysadm/run.sh ./crysadm/down.sh ./crysadm/setup.sh  ./crysadm/cron.sh
+RUN chmod +x ./crysadm/run.sh ./crysadm/down.sh ./crysadm/setup.sh
 #redis数据库保存目录
 VOLUME ["/var/lib/redis"]
 
